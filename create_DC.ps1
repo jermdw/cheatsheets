@@ -28,3 +28,14 @@ Install-ADDSForest
 -NoRebootOnCompletion:$false
 -SysvolPath “C:\Windows\SYSVOL”
 -Force:$true
+
+# Part 3
+# Make sure AD/DNS services are running
+Get-Service adws,kdc,netlogon,dns
+
+# Check for sysvol and netlogon shares
+Get-smbshare
+
+# Review Logs
+get-eventlog "Directory Service" | select entrytype, source, eventid, message
+get-eventlog "Active Directory Web Services" | select entrytype, source, eventid, message
