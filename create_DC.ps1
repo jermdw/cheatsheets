@@ -1,4 +1,6 @@
 # Create Windows Domain Controller Quickly
+# Reference 1: https://cloudblogs.microsoft.com/industry-blog/en-gb/cross-industry/2016/06/08/setting-up-active-directory-via-powershell/
+# Reference 2: https://blogs.technet.microsoft.com/chadcox/2016/10/25/chads-quick-notes-installing-a-domain-controller-with-server-2016-core/
 
 # Part 1
 
